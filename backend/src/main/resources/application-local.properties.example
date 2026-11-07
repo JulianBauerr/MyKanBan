@@ -1,0 +1,2 @@
+# Copy to application-local.properties and fill in your local values
+spring.datasource.password=your-db-password
