@@ -1,4 +1,10 @@
 package com.example.mykanban.board.dto;
 
-public class BoardCreateRequest {
-}
+import jakarta.validation.constraints.NotNull;
+
+public record BoardCreateRequest(
+    @NotNull
+    String name
+) {}
+
+

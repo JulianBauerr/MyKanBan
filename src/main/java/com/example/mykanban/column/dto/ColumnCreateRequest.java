@@ -1,4 +1,9 @@
 package com.example.mykanban.column.dto;
 
-public record ColumnCreateRequest() {
+import jakarta.validation.constraints.NotNull;
+
+public record ColumnCreateRequest(
+        @NotNull
+        String name
+) {
 }

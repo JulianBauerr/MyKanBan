@@ -5,7 +5,7 @@ import jakarta.validation.constraints.NotNull;
 
 import java.util.List;
 
-public record ColumUpdateRequest(
+public record ColumnUpdateRequest(
         @NotNull
         String Name,
         List<Task> taskList,

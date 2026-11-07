@@ -1,4 +1,13 @@
 package com.example.mykanban.task.dto;
 
-public record TaskUpdateRequest() {
+import jakarta.validation.constraints.NotNull;
+
+public record TaskUpdateRequest(
+        @NotNull
+        String name,
+        String description,
+        @NotNull
+        boolean done
+) {
+
 }

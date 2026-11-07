@@ -1,6 +1,6 @@
 package com.example.mykanban.task;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ITaskCrudRepository extends CrudRepository<Task, Integer> {
+public interface TaskRepository extends JpaRepository<Task, Integer> {
 }

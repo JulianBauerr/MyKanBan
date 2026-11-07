@@ -1,4 +1,11 @@
 package com.example.mykanban.task.dto;
 
-public record TaskMoveRequest() {
+import jakarta.validation.constraints.NotNull;
+
+public record TaskMoveRequest(
+        @NotNull
+        int taskId,
+        @NotNull
+        int moveToColumnId
+) {
 }
